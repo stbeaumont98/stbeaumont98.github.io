@@ -13,9 +13,9 @@ function numLY(date) {
 
 function getDiff(date1, date2) {
     const date1Array = date1.split("-");
-    let y1 = date1Array[0], m1 = date1Array[1], d1 = date1Array[2];
+    let y1 = parseInt(date1Array[0]), m1 = parseInt(date1Array[1]), d1 = parseInt(date1Array[2]);
     const date2Array = date2.split("-");
-    let y2 = date2Array[0], m2 = date2Array[1], d2 = date2Array[2];
+    let y2 = parseInt(date2Array[0]), m2 = parseInt(date2Array[1]), d2 = parseInt(date2Array[2]);
 
     let n1 = y1 * 365 + d1;
 
