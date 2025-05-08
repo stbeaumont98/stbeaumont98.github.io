@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog Age Matcher</title>
+    <script src="/dog-age-matcher/scripts/calculate.js"></script>
 </head>
 <body>
     <h1>Dog Age Matcher</h1>
     <p>Ever wondered at what point your age and your dog's age would be the same?</p>
-    <form action="">
+    <form onsubmit="submitForm()">
         <label for="dogs-birthday">Dog's birthday:</label>
         <input type="date" name="dogs-birthday" id="dogs-birthday">
         <label for="user-birthday">Your birthday:</label>
