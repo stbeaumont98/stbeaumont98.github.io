@@ -50,5 +50,5 @@ function submitForm() {
     let dogBirthday = document.getElementById("dogs-birthday").value;
     let userBirthday = document.getElementById("user-birthday").value;
 
-    document.getElementById("result").innerHTML = calcMatch(dogBirthday, userBirthday);
+    document.getElementById("result").innerHTML = getDiff(dogBirthday, userBirthday);
 }
