@@ -34,16 +34,20 @@ function getDiff(date1, date2) {
     return n1 - n2;
 }
 
+function addDays(date, days) {
+    var result = new Date(date);
+    result.setDate(result.getDate() + days);
+    return result;
+}
+
 function calcMatch(dogBirthday, userBirthday) {
     let offset = getDiff(dogBirthday, userBirthday);
-    if (offset == 0)
-        return 0;
     
     let i = 0;
     while (i * 7 < offset + i)
         i++;
 
-    return i;
+    return addDays(dogBirthday, i);
 }
 
 function submitForm() {
