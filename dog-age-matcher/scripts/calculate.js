@@ -83,13 +83,13 @@ function addDays(date, days) {
 function calcMatch() {
     let dogBirthday = document.getElementById("dogs-birthday").value;
     let userBirthday = document.getElementById("user-birthday").value;
-    let offset = getDiff(dogBirthday, userBirthday);
+    // let offset = getDiff(dogBirthday, userBirthday);
 
-    let age = getAge(userBirthday, dogBirthday);
+    const age = getAge(userBirthday, dogBirthday);
     
-    let i = 0;
-    while (i * 7 < offset + i)
-        i++;
+    // let i = 0;
+    // while (i * 7 < offset + i)
+    //     i++;
 
-    document.getElementById("result").innerHTML = age.toString();//addDays(dogBirthday, i).toDateString();
+    document.getElementById("result").innerHTML = getAge(userBirthday, dogBirthday);//addDays(dogBirthday, i).toDateString();
 }
