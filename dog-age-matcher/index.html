@@ -11,9 +11,20 @@
     <p>Ever wondered at what point your age and your dog's age would be the same?</p>
     <label for="user-birthday">Your birthday:</label>
     <input type="date" name="user-birthday" id="user-birthday">
+    <br>
     <label for="dogs-birthday">Dog's birthday:</label>
     <input type="date" name="dogs-birthday" id="dogs-birthday">
-    <button onclick="submitForm()">Submit</button>
+    <br>
+    <label for="dog-size">Dog size:</label>
+    <select name="dog-size" id="dog-size">
+        <option value="small">Small (&le; 20 lbs)</option>
+        <option value="medium">Medium (21-50 lbs)</option>
+        <option value="large">Large (51-100 lbs)</option>
+        <option value="giant">Giant (&gt; 100 lbs)</option>
+    </select>
+    <br>
+    <button onclick="calcMatch()">Calculate</button>
+
     <h3>Result: </h3>
     <h3 id="result"></h3>
 </body>
