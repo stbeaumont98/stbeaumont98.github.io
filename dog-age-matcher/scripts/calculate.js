@@ -91,5 +91,5 @@ function calcMatch() {
     // while (i * 7 < offset + i)
     //     i++;
 
-    document.getElementById("result").innerHTML = getAge(userBirthday, dogBirthday);//addDays(dogBirthday, i).toDateString();
+    document.getElementById("result").innerHTML = age[0].toString();//addDays(dogBirthday, i).toDateString();
 }
