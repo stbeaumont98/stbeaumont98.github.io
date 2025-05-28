@@ -2,4 +2,59 @@ body {
     background-color: #2B4570;
     font-family: 'Work Sans';
     color: white;
+    padding: 0% 10%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+}
+
+header h1 svg {
+    padding: 0% 10px;
+}
+
+header div#links {
+    display: flex;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 0% 5px;
+}
+
+header a img {
+    padding: 0% 10px;
+}
+
+ul#projects_list {
+    list-style: none;
+    padding-left: 0;
+}
+
+li.project {
+    display: flex;
+    justify-content: center;
+    padding: 8px 16px;
+}
+
+div.project_info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 40%;
+    padding: 0 16px;
+}
+
+div.hidden {
+    visibility: collapse;
 }
