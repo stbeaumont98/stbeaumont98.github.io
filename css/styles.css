@@ -16,15 +16,28 @@ header svg {
 }
 
 header h1 {
-    margin: 10px 0;
+    margin: 3px 0;
 }
+
+ header p {
+    margin: 0 3px 10px;
+ }
 
 div#title {
     display: flex;
+    align-items: center;
+}
+
+div#socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 div.links {
     display: flex;
+    margin: 5px 0 0;
 }
 
 header a {
@@ -32,26 +45,25 @@ header a {
     align-items: center;
     color: white;
     text-decoration: none;
-    padding: 0 5px;
+    padding: 0 0 0 10px;
 }
 
 header a img {
-    padding: 0 10px 0 0;
+    padding: 0 5px 0 0;
 }
 
 ul a img {
     padding: 0 0 0 10px;
 }
 
-ul#projects_list {
+ul {
     list-style: none;
-    padding-left: 0;
+    padding: 8px 16px;
 }
 
 li.project {
     display: flex;
     justify-content: space-between;
-    padding: 8px 16px;
 }
 
 li.project img {
@@ -67,4 +79,10 @@ div.project_info {
 
 div.hidden {
     visibility: collapse;
+}
+
+li.achievement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
