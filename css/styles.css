@@ -2,7 +2,7 @@ body {
     background-color: #2B4570;
     font-family: 'Work Sans';
     color: white;
-    padding: 0 20%;
+    padding: 0 15%;
 }
 
 header {
@@ -35,9 +35,12 @@ div#socials {
     justify-content: space-between;
 }
 
+div#socials > * {
+    padding: 5px 0;
+}
+
 div.links {
     display: flex;
-    margin: 5px 0 0;
 }
 
 header a {
@@ -52,6 +55,15 @@ header a img {
     padding: 0 5px 0 0;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    width: 100%;
+}
+
 ul a img {
     padding: 0 0 0 10px;
 }
@@ -59,6 +71,8 @@ ul a img {
 ul {
     list-style: none;
     padding: 8px 16px;
+    width: 85%;
+    align-self: center;
 }
 
 li.project {
@@ -85,4 +99,74 @@ li.achievement {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (max-width:1280px) {
+    /* big landscape tablets, laptops, and desktops */
+    
+    body {
+        padding: 0 10%;
+    }
+
+    ul {
+        width: 100%;
+    }
+}
+
+@media (max-width:1024px)  {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+    header {
+        flex-direction: column;
+    }
+
+    
+    div#socials {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    body {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width:960px)  {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+    li.project {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    div.project_info {
+        width: 75%;
+    }
+}
+
+@media (max-width:640px)  {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    
+    body {
+        margin: 0;
+        padding: 0 5%;
+    }
+    
+    div#title div {
+        text-align: right;
+        width: min-content;
+    }
+
+    div.project_info {
+        width: 100%;
+    }
+}
+
+@media (max-width:480px)  {
+    /* smartphones, iPhone, portrait 480x320 phones */
+
+    li.achievement {
+        flex-direction: column;
+    }
+
 }
