@@ -106,10 +106,6 @@ li.achievement {
 
 @media (max-width:1280px) {
     /* big landscape tablets, laptops, and desktops */
-    
-    body {
-        padding: 0 10%;
-    }
 
     ul {
         width: 100%;
@@ -130,7 +126,7 @@ li.achievement {
     }
 
     body {
-        padding: 0 5%;
+        padding: 0 10%;
     }
 }
 
@@ -153,8 +149,12 @@ li.achievement {
         padding: 0 5%;
     }
     
+    div#title {
+        width: 100%;
+        justify-content: center;
+    }
+
     div#title div {
-        text-align: right;
         width: min-content;
     }
 
